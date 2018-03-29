@@ -1,0 +1,76 @@
+fibo(n){
+
+    var u, v, w;
+    v = 1;
+
+    if(n < 2) {
+        return 1;
+    } else {
+        return fibo(n - 1) + fibo(n - 2);
+    };
+}
+
+main(){
+    var b, a;
+
+    writeln(b);
+
+    b = 12345;
+    writeln(b);
+
+    write("fibo(30)=");
+    writeln(fibo(30));
+    writeln(fibo(30) + fibo(30));
+
+    if(1 < 0){
+        writeln("never");
+    };
+
+    if(1 > 0){
+        writeln("always");
+        writeln("always 1 ");
+    };
+
+    if(1 < 3){
+       writeln("1 < 3");
+    } else {
+        writeln("else 1");
+    };
+
+    if(1 > 3){
+       writeln("1 > 3");
+    } else {
+        writeln("else 2");
+    };
+
+    if (1 > 4) {
+        writeln("1 > 4");
+    } elsif (1 < 4) {
+        writeln("1 < 4");
+    } else {
+        writeln("else 3");
+    };
+
+    if(1 > 12){
+        writeln("1 > 12");
+    } elsif (1 > 6) {
+        writeln("1 < 2");
+    } elsif (1 < 6 ){
+        writeln("1 < 6");
+    } else {
+       writeln("else 4");
+    };
+
+    a = 0;
+    while (a < 5) {
+        writeln(a);
+        a = a + 1;
+    };
+
+    writeln(1 + 2 + 3);
+    writeln(1 - 2 + 3);
+    writeln(2 * 3 - 5);
+
+    b = (2 - (6 / 3)) * (3 - 4);
+    writeln(b);
+}
